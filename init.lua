@@ -2,6 +2,8 @@ vim.opt.termguicolors = true
 -- Load config
 require("config.lazy")
 require("mason-lspconfig").setup()
+require("plugins.treesitter")
+require("telescope").load_extension('fzf')
 
 -- Load theme and set colorscheme
 require("plugins.theme")
@@ -14,6 +16,7 @@ require("config.whichkey")
 require("bufferline").setup()
 
 require("plugins.oil") -- Require the plugin file so it can load the keymap of oil in it
+require("config.hover")
 
 -- Turn on relative number
 vim.o.relativenumber = true
