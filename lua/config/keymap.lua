@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
 -- Format file
-vim.keymap.set("n", "<leader>ff", function()
+vim.keymap.set("n", "<leader>cf", function()
 	require("conform").format({
 		lsp_fallback = true,
 		async = false,
@@ -16,3 +16,15 @@ vim.keymap.set("n", "<leader> g", builtin.live_grep, { desc = "Telescope live gr
 vim.keymap.set("n", "<leader> b", builtin.buffers, { desc = "Telescope find buffers" })
 vim.keymap.set("n", "<leader> h", builtin.help_tags, { desc = "Telescope find help tags" })
 vim.keymap.set("n", "<leader> u", builtin.colorscheme, { desc = "Telescope colorscheme" })
+vim.keymap.set("n", "<leader> c", function()
+	vim.cmd([[TodoTelescope]])
+end, { desc = "Telescope find comment note" })
+
+-- Todo
+
+-- Which Key
+local wk = require("which-key")
+wk.add({
+	{ "<leader> ", group = "Telescope" },
+    { "<leader>c", group = "Code Action" }
+})
