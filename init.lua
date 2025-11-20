@@ -14,17 +14,21 @@ require("config.keymap")
 require("config.whichkey")
 
 require("bufferline").setup()
+require("plugins.conform")
 
 require("plugins.oil") -- Require the plugin file so it can load the keymap of oil in it
 require("config.hover")
 
+
+require("plugins.lsp")
+require('plugins.docscribe')
 -- Turn on relative number
 vim.o.relativenumber = true
 vim.opt.number = true
 
 -- Change tab's depth
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.autoindent = true
 

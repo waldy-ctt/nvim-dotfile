@@ -1,3 +1,8 @@
 return {
-	"neovim/nvim-lspconfig"
+	"neovim/nvim-lspconfig",
+    config = function ()
+        vim.lsp.tsserver = {
+            format = false
+        }
+    end
 }
