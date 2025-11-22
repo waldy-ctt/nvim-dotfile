@@ -23,6 +23,8 @@ require("config.hover")
 
 require("plugins.lsp")
 require('plugins.docscribe')
+
+require('plugins.flutter')
 -- Turn on relative number
 vim.o.relativenumber = true
 vim.opt.number = true
