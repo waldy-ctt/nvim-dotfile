@@ -1,6 +1,7 @@
 vim.opt.termguicolors = true
 -- Load config
 require("config.lazy")
+require('plugins.mason')
 require("plugins.mason-lsp")
 require("plugins.treesitter")
 require("telescope").load_extension('fzf')
