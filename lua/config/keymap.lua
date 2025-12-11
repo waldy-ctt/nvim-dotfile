@@ -5,7 +5,7 @@ vim.keymap.set("n", "<leader>cf", function()
 	require("conform").format({
 		lsp_fallback = true,
 		async = false,
-		timeout_ms = 500,
+		timeout_ms = 2500,
 	})
 end, { desc = "Format file" })
 
