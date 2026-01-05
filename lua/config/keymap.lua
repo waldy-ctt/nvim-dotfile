@@ -140,5 +140,5 @@ wk.add({
 
 local kulala = require("kulala")
 vim.keymap.set("n", "<leader>rs", kulala.run, { desc = "[Kulala] Run request" })
-vim.keymap.set("n", "<leader>ra", kulala.run_all, { desc = "[Kulala] Run request" })
+vim.keymap.set("n", "<leader>ra", kulala.run_all, { desc = "[Kulala] Run all request" })
 vim.keymap.set("n", "<leader>rb", kulala.scratchpad, { desc = "[Kulala] Open scratchpad" })
