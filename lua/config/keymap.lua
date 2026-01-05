@@ -135,9 +135,10 @@ wk.add({
   { "<leader>b", group = "Buffer" },
   { "<leader>w", group = "Window" },
   { "g",         group = "Go" },
+  { "<leader>r", group = "Kulala" }
 })
 
 local kulala = require("kulala")
-vim.keymap.set("n", "<leader>rs", kulala.run, { desc = "[Kulala] Run request", group = "Kulala" })
-vim.keymap.set("n", "<leader>ra", kulala.run_all, { desc = "[Kulala] Run request", group = "Kulala" })
-vim.keymap.set("n", "<leader>rb", kulala.scratchpad, { desc = "[Kulala] Open scratchpad", group = "Kulala" })
+vim.keymap.set("n", "<leader>rs", kulala.run, { desc = "[Kulala] Run request" })
+vim.keymap.set("n", "<leader>ra", kulala.run_all, { desc = "[Kulala] Run request" })
+vim.keymap.set("n", "<leader>rb", kulala.scratchpad, { desc = "[Kulala] Open scratchpad" })
