@@ -5,8 +5,8 @@ return {
   config = function()
     require("nvim-treesitter.configs").setup({
       -- 1. FORCE install the Go parsers
-      ensure_installed = { "go", "gomod", "gowork", "javascript", "typescript", "lua" },
-      
+      ensure_installed = { "go", "gomod", "gowork", "javascript", "typescript", "lua", "python" },
+
       -- 2. Sync install them so you see results immediately
       sync_install = false,
 
@@ -15,7 +15,7 @@ return {
         enable = true,
         additional_vim_regex_highlighting = false,
       },
-      
+
       -- 4. Indentation based on treesitter
       indent = { enable = true },
     })
