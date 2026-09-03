@@ -2,8 +2,7 @@ return {
   -- Comment.nvim
   {
     "numToStr/Comment.nvim",
-    event = "VeryLazy",
-    opts = {},
+    enabled = false,
   },
 
   -- Autopairs

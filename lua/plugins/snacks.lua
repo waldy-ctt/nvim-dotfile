@@ -23,7 +23,11 @@ return {
     statusline = { enabled = true },
     indent = { enabled = true },
     input = { enabled = true },
-    notifier = { enabled = true },
+    notifier = {
+      enabled = true,
+      level = 2,
+      timeout = 3000,
+    },
     scroll = { enabled = true },
   },
   keys = {

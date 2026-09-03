@@ -20,6 +20,9 @@ vim.opt.splitbelow = true
 vim.opt.inccommand = "split"
 vim.opt.undofile = true
 
+-- Add Mason binaries to PATH so LSP servers can be found
+vim.env.PATH = "/home/waldy/.local/share/nvim/mason/bin:" .. vim.env.PATH
+
 -- Register built-in treesitter languages
 local languages = {
   "lua", "typescript", "javascript", "tsx", "json", "html", "css",

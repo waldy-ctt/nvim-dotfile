@@ -15,13 +15,6 @@ return {
     },
   },
 
-  -- Oil
-  {
-    "stevearc/oil.nvim",
-    cmd = "Oil",
-    opts = { default_file_explorer = true },
-  },
-
   -- Todo comments
   {
     "folke/todo-comments.nvim",
