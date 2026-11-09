@@ -49,7 +49,7 @@ return {
       })
 
       vim.lsp.config("gopls", {
-        settings = { gopls = { staticcheck = true, gofumpt = true } },
+        settings = { gopls = { staticcheck = false, gofumpt = false } },
       })
 
       vim.lsp.config("rust_analyzer", {
